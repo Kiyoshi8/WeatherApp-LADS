@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('city.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.card{
+    width: 100%;
+    height: 80%;
+    max-width: 460px;
+    background-image: url('Compressed\ qi-li-shen3.gif');
+    background-attachment: center;
+    background-size: 13cm;
+    color: #fff;
+    border-radius: 40px;
+    padding: 5px 30px;
+    text-align: center;
+}
+
+.search{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    position: inherit;
+    color: #06283D;
+    padding: 15px 40px;
+    height: 60px;
+    border-radius: 50px;
+    flex: 1;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    padding: 10px 30px;
+    background: #ebfffc;
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    color: #06283D;
+    background: #dff6ff;
+    padding-left: 20px;
+    font-size: 20px;
+    transition: 0.4s ease;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.weather-icon{
+    content: '';
+    background-position-y: -20px;
+    position: inherit;
+    width: 200px;
+    margin-bottom: 30px;
+    display: center;
+}
+
+.weather-icon img{
+    margin-bottom: 50px; 
+    animation: rotation 6s infinite linear;  
+}
+
+.weather h1{
+    font-size: 75px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 13px;
+    margin-top: 50px;
+}
+
+.col i{
+    font-size: 30px;
+    align-items: center;
+}
+
+.humidity, .wind{
+    font-size: 18px;
+}
+
+.search input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    color: #62869e;
+    text-transform: capitalize;
+} 
+
+.search button:hover{
+    animation: rotation 6s infinite linear;
+    color: #fff;
+    background: #06283D;
+}
+
+.search i{
+    position: absolute;
+    padding: 10px 24px;
+    color: #153e58;
+    font-size: 24px;
+    margin-left: 4px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    font-size: 23px;
+    position: center;
+    display: none;
+}
+
+.error-icon{
+    content: '';
+    background-position-y: -20px;
+    position: inherit;
+    width: 200px;
+    margin-bottom: 30px;
+    display: center;
+}
+
+.error-icon img{
+    margin-bottom: 50px;   
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+

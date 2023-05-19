@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_3.css">
+    <title>Weather App</title>
+</head>
+<body>
+
+
+    <div class="card">
+        <div class="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your city">
+                    <button class="fa-solid fa-magnifying-glass" id="icon"></button>
+        </div>
+        <div class="error">
+            <p>Oops! Invalid city name</p>
+            <img src="QIYUCROPCIRCLE.png" class="error-icon">
+        </div>
+        <div class="weather">
+            <img src="LISHENRAIN.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>   
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<audio id="mySong">
+    <source src="GameIntroSoundTrack.mp3" type="audio/mpeg">
+</audio>
+<script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+    
+        icon.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+            // You can pause the audio by inserting this code below   
+            //}else{
+                //mySong.pause();
+            }
+    
+        }
+</script>
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="script_2.js"></script>
+</script>
+</body>
+</html>
